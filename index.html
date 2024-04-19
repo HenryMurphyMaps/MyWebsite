@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Henry Murphy Portfolio</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    /* Custom styles */
+    body {
+      font-family: "Arial", sans-serif; /* Change font to your preferred one */
+      background-color: #f5f5f5; /* Light gray background color */
+      margin-top: 70px; /* Adjust top margin to prevent cutoff */
+    }
+    h3, p {
+      font-family: "Times New Roman", serif; /* Change font to your preferred one */
+    }
+    .header-section {
+      background-image: url('images/stockbackground.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 150px 0; /* Adjust padding as needed */
+      text-align: center;
+      color: #f8f8f8; /* Text color on top of the background image */
+      position: relative; /* Ensure the profile image is positioned relative to this container */
+    }
+    .profile-image {
+      width: 100px; /* Adjust size of profile image */
+      height: 100px;
+      border-radius: 50%; /* Make it circular */
+      border: 3px solid white; /* White border around the image */
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 1; /* Ensure the image appears above the background image */
+    }
+    /* Style for the portfolio section */
+    .portfolio-image {
+      width: 100%; /* Ensure images fill their containers */
+      height: auto; /* Maintain aspect ratio */
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<div class="header-section">
+  <img src="images/iamgeofmyself.jpeg" alt="Your Profile Image" class="profile-image">
+  <h1>Henry Murphy's Portfolio</h1>
+</div>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-wide w3-card">
+    <a href="#home" class="w3-bar-item w3-button">Henry Murphy</a>
+    <!-- Add links to navigate to different sections -->
+    <a href="#about" class="w3-bar-item w3-button">About</a>
+    <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width: 800px;">
+
+  <!-- About Section -->
+  <div id="about" class="w3-container w3-padding-32">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About Me</h3>
+    <p>I'm Henry Murphy, a current undergraduate student at the University of Kentucky, majoring in GIS and Mapping. My skills include data management and analysis, GIS, QGIS, ArcGIS, and knowledge in various coding languages. I'm also familiar with Adobe products like Photoshop and Illustrator.
+
+        Beyond academics, I engage with sports and sports analytics, particularly soccer, Formula 1, and NBA which captivate my interest for their precision and strategy. When not immersed in technology or sports, I enjoy traveling and spending time with friends and family.
+        
+        In my career, my focus is on excelling and making a positive impact in the spaces I enter.</p>
+  </div>
+
+  <!-- Portfolio Section -->
+<div id="portfolio" class="w3-container w3-padding-32">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Portfolio</h3>
+    <!-- Gallery with Modal Images -->
+    <div class="w3-row-padding">
+      <!-- Existing images -->
+      <div class="w3-half">
+        <div class="w3-card">
+          <img src="images/SanJose-TerrainMap.png" class="portfolio-image w3-hover-opacity" onclick="onClick(this)">
+          <div class="w3-container">
+            <h4>San Jose Terrain Map</h4>
+            <p>Description: the San Jose Valley Terrain Map—a product of my advanced cartography class. This map offers a detailed depiction of the valley's topography, created with a focus on hillshading techniques and Blender rendering. It's a showcase of the landscape's beauty, crafted with precision and attention to detail.  </p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-half">
+        <div class="w3-card">
+          <img src="images/Seattle-AQIValue.png" class="portfolio-image w3-hover-opacity" onclick="onClick(this)">
+          <div class="w3-container">
+            <h4>Seattle AQI Value</h4>
+            <p>Description: Explore the AQI Levels Map of Seattle, WA, a centerpiece of my capstone project. This map delves into the spatial analysis of urban green spaces and their impact on air quality. With a focus on GIS techniques, it provides valuable insights into environmental dynamics in urban settings, shedding light on the importance of green infrastructure for healthier cities. </p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-half">
+        <div class="w3-card">
+          <img src="images/GEO305-Map-page-0.png" class="portfolio-image w3-hover-opacity" onclick="onClick(this)">
+          <div class="w3-container">
+            <h4>GEO 305 Map</h4>
+            <p>Description: the Elevation Map of Panama, crafted during my cartography class lab. This map delves into the intricate topography of Panama, offering insights into its diverse landscape. Through advanced cartographic techniques, it illuminates the country's elevation variations, providing a deeper understanding of its geographical features and environmental dynamics.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="w3-half">
+        <div class="w3-card">
+          <img src="images/Kobe “Bean” Bryant is a professonal NBA player recognized as a Legend of the game. Kobe played in the NBA from 1996 - 2016..png" class="portfolio-image w3-hover-opacity" onclick="onClick(this)">
+          <div class="w3-container">
+            <h4>Kobe Bryant</h4>
+            <p>Description: Explore the Kobe Bryant Shot Chart and Bar Graph, a product of my cartography class where I utilized R coding language in R Studio. This visual masterpiece dissects Kobe Bryant's shooting patterns with precision, offering a comprehensive analysis of his scoring tendencies on the basketball court. Through meticulous data visualization techniques, this chart and graph provide valuable insights into Kobe's strategic prowess and scoring efficiency throughout his illustrious career in the NBA.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- New image -->
+      <div class="w3-half">
+        <div class="w3-card">
+          <img src="images/Signatories of the Protocol of free movement of persons in Africa.png" class="portfolio-image w3-hover-opacity" onclick="onClick(this)">
+          <div class="w3-container">
+            <h4>Signatories of the Protocol of free movement of persons in Africa</h4>
+            <p>Description: Dive into the Map of Signatories of the Protocol of Free Movement of Persons in Africa. This map illuminates the signatory nations involved in fostering free movement across the African continent. Through spatial representation and geographic analysis, this map sheds light on the collaborative efforts aimed at promoting regional integration and facilitating the movement of people within Africa.</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <!-- Contact Section -->
+  <div id="contact" class="w3-container w3-padding-32">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Murphy.roberth1@gmail.com / 314-258-5595 / www.linkedin.com/in/henrymurphy010</p>
+  </div>
+
+</div>
+
+<!-- Script for Modal Images -->
+<script>
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+  }
+</script>
+
+<!-- Modal for Images -->
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-button w3-hover-red w3
+</span>onclick="this.parentElement.style.display='none'" class="w3-button w3-large w3-hover-red">&times;</span>
+  <img class="w3-modal-content" id="img01" style="width:100%">
+</div>
+
+</body>
+</html>
+
